@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Shield, Home, FileText, LayoutDashboard, Zap } from "lucide-react";
+import { useAppStore } from "@/lib/store";
 
 const navItems = [
   { path: "/", icon: Home, label: "Home" },
@@ -53,7 +54,5 @@ export const SafetyHeader = () => {
     </header>
   );
 };
-
-import { useAppStore } from "@/lib/store";
 
 export default BottomNav;
